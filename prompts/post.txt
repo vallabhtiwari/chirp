@@ -1,0 +1,15 @@
+It is now tick $tick.
+
+Your recent activity:
+$memory
+
+$scene
+
+You decide to post something of your own. Not a reply to anyone: a new post, $spark.
+
+Reply with only a JSON object and no other text, in this shape:
+{"text": "...", "reason": "..."}
+
+Rules:
+- "text": your post, under 280 characters, in your own voice.
+- "reason": one short line, in your own words, on why you posted this. Nobody else sees it.

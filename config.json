@@ -1,0 +1,125 @@
+{
+  "run_name": "v1",
+  "ticks": 30,
+  "random_seed": 42,
+  "feed_size": 10,
+  "memory_size": 5,
+  "posts_per_tick": 2,
+  "personas_dir": "personas",
+  "seed_topic": "NovaCode's claim that AI can fully replace junior developers",
+  "scheduled_posts": [
+    {
+      "tick": 0,
+      "author": "technews",
+      "topic": "novacode",
+      "keywords": [
+        "novacode",
+        "junior dev",
+        "junior developer",
+        "juniors",
+        "replace junior"
+      ],
+      "text": "BREAKING: Startup NovaCode says its new AI agent can fully replace junior developers, and it plans to cut 40% of its own junior engineering hires this year."
+    },
+    {
+      "tick": 3,
+      "author": "sportsdesk",
+      "topic": "football",
+      "opinion_on": "Riverside FC knocking the champions out of the cup",
+      "opinion_sides": {
+        "for": "you're a Riverside FC fan and thrilled about the upset",
+        "against": "you support the champions Riverside knocked out, and you think the win was a fluke"
+      },
+      "keywords": ["riverside", "football", "champions", "94th", "underdog"],
+      "text": "Underdogs Riverside FC knock the champions out of the cup with a goal in the 94th minute."
+    },
+    {
+      "tick": 6,
+      "author": "citynews",
+      "topic": "metro fares",
+      "opinion_on": "the city's 15% metro fare rise",
+      "keywords": ["metro", "fare", "transit"],
+      "text": "City council approves a 15% rise in metro fares starting next month."
+    },
+    {
+      "tick": 9,
+      "author": "weatherdesk",
+      "topic": "heatwave",
+      "opinion_on": "officials telling people to stay indoors during the heatwave",
+      "keywords": [
+        "heatwave",
+        "heat wave",
+        "41°",
+        "41 degrees",
+        "temperatures"
+      ],
+      "text": "Heatwave warning: temperatures expected to hit 41°C this weekend. Officials urge people to stay indoors at midday."
+    },
+    {
+      "tick": 12,
+      "author": "sciencedaily",
+      "topic": "exoplanet",
+      "opinion_on": "spending public money on space research like the exoplanet discovery",
+      "keywords": [
+        "planet",
+        "water vapour",
+        "water vapor",
+        "astronom",
+        "light-years",
+        "light years"
+      ],
+      "text": "Astronomers detect water vapour in the atmosphere of a planet 120 light-years away."
+    },
+    {
+      "tick": 15,
+      "author": "technews",
+      "topic": "novacode",
+      "keywords": [
+        "novacode",
+        "junior dev",
+        "junior developer",
+        "juniors",
+        "replace junior"
+      ],
+      "text": "UPDATE: Leaked internal memo suggests NovaCode's AI agent still needs senior engineers to review nearly every change it makes."
+    },
+    {
+      "tick": 18,
+      "author": "screenbuzz",
+      "topic": "streaming prices",
+      "opinion_on": "Flixo raising prices and charging for password sharing",
+      "keywords": ["flixo", "streaming", "password sharing"],
+      "text": "Streaming service Flixo raises prices for the second time this year and starts charging for password sharing."
+    },
+    {
+      "tick": 22,
+      "author": "sportsdesk",
+      "topic": "chess prodigy",
+      "opinion_on": "children as young as 9 competing in serious national tournaments",
+      "keywords": ["chess", "grandmaster", "prodigy"],
+      "text": "A 9-year-old wins the national chess championship, beating three grandmasters along the way."
+    },
+    {
+      "tick": 26,
+      "author": "citynews",
+      "topic": "bookstore closing",
+      "opinion_on": "saving local bookstores like Corner Pages, even if books cost more there than online",
+      "keywords": ["bookstore", "corner pages", "bookshop"],
+      "text": "Corner Pages, the downtown bookstore open since 1985, says it will close at the end of the month."
+    }
+  ],
+  "llm": {
+    "provider": "openai_compatible",
+    "base_url": "https://api.openai.com/v1",
+    "api_key_env": "OPENAI_API_KEY",
+    "model": "gpt-6-luna",
+    "temperature": null,
+    "max_tokens": 1024,
+    "token_limit_param": "max_completion_tokens",
+    "timeout_seconds": 60,
+    "min_seconds_between_calls": 0.1,
+    "extra_body": {},
+    "usd_per_million_tokens": {"input": 0.10, "output": 0.50}
+  },
+  "parallel_calls": 8
+}

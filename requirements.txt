@@ -1,0 +1,2 @@
+# Chirp v0 uses only the Python standard library (Python 3.9+).
+# Nothing to install yet. Add third-party packages here as the project grows.
